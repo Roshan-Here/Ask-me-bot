@@ -1,0 +1,41 @@
+{
+  "name": "Ask me Bot",
+  "description": "Telegram bot to Ask Questions/Doubts ",
+  "repository": "https://github.com/Roshan-Here",
+  "logo": "https://te.legra.ph/file/321091ec1eb145acd10a4.jpg",
+  "keywords":[
+    "Ask-me-bot",
+    "pyrogram",
+    "python",
+    "Python-arq"
+    ],
+    "env": {
+        "APP_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": ""
+         },
+         "API_HASH": {
+            "description": "Your API Hash From my.telegram.org",
+            "value": ""
+         },
+         "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": ""
+         },
+         "ARQ": {
+            "description": "ARQ key Get it from ARQRobot",
+            "value": ""
+         }
+      },
+      "buildpacks": [
+        {
+          "url": "heroku/python"
+        }
+      ],
+      "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}       
